@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generater</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="logo-head">
+
+            <h1>IMAGE Generater</h1>
+
+        </div>
+
+        <div class="main-content">
+
+            <form action="#" class="prmt-form">
+
+                <div class="promt-container">
+
+                    <textarea class="promt-input" placeholder="Type your image promt here" required></textarea>
+
+    
+                </div>
+
+                <div class="promt-actions">
+
+                    
+                <!-- <div class="select-wraper"> -->
+
+                    <select class="select-wraper" id="select-model" required>
+
+                        <option value="" selected disabled>Select model</option>
+
+                        <option value="black-forest-labs/FLUX.1-dev">black-forest-labs/FLUX.1-dev</option>
+                        <option value="Kwai-Kolors/Kolors">Kwai-Kolors/Kolors</option>
+                        <option value="temp3">temp3</option>
+
+                    </select>
+
+                <!-- </div> -->
+
+                <!-- <div class="select-wraper"> -->
+
+                    <select class="select-wraper" id="image-count" required>
+
+                        <option value="" selected disabled>Image Count</option>
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+
+                    </select>
+
+                <!-- </div> -->
+
+                <!-- <div class="select-wraper"> -->
+
+                    <select class="select-wraper" id="aspect-ratio" required>
+
+                        <option value="" selected disabled>aspect raio</option>
+
+                        <option value="1/1">1:1</option>
+                        <option value="16/9">16:9</option>
+                        
+
+                    </select>
+
+                <!-- </div> -->
+
+                <button type="submit" class="genrate-btn">Generate</button>
+
+                </div>
+                
+
+                <div class="gallery-grid">
+<!-- 
+                    <div class="image-card">
+
+                        <img src="temp_image.png" class="result-img" >
+
+                        <div class="image-overlay">
+
+                            <button class="img-download-btn">
+
+                                <i class="fa-solid fa-download"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div> -->
+
+                   
+                </div>
+
+            </form>
+
+        
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

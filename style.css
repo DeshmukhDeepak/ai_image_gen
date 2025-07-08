@@ -1,0 +1,161 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(212, 207, 207);
+
+}
+
+.container {
+
+    width: 900px;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 23px;
+    box-shadow: 0 10px 20px 0 rgb(174, 173, 173);
+}
+
+.logo-head {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-content {
+    margin: 35px 0 10px;
+}
+
+.promt-container {
+
+    width: 100%;
+    margin-bottom: 20px;
+    /* border: 2px soild black; */
+}
+
+.promt-input {
+
+    width: 100%;
+    line-height: 1.2;
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 10px;
+    /* border: 1px soild black; */
+}
+
+.promt-actions {
+
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1.0fr 1fr 1.1fr 0.5fr;
+
+}
+
+.genrate-btn {
+
+    display: flex;
+    gap: 12px;
+    font-weight: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* width: 90px; */
+    /* height: 25px; */
+    border-radius: 7px;
+    border: #f4f2f2;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ee4949;
+    margin-left: auto;
+    
+}
+
+.genrate-btn:hover{
+
+    color: black;
+    box-shadow: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.genrate-btn:active {
+
+    transform: scale(0.99);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.select-wraper {
+
+    cursor:pointer;
+    padding: 10px;
+    border: 1px solid rgb(211, 211, 202);
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+
+
+}
+
+.gallery-grid:has(.image-card){
+
+
+    /* border: 2px solid black; */
+    margin-top: 30px;
+    
+}
+
+.gallery-grid {
+    
+    display: grid;
+    gap: 15px;
+    /* grid-template-columns: repeat(auto-fill , minmax(180px,1fr)); */
+    /* border: 2px solid black; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.image-card {
+
+    position: relative;
+    overflow: hidden;
+    background-color: #ee4949;
+    border: 3px solid black;
+    aspect-ratio: 1;
+}
+
+.result-img {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.image-overlay {
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.img-download-btn {
+
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+}
